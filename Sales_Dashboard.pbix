@@ -1,19 +1,13 @@
 # Sales_Dashboard.pbix
 # DAX Measures
-Total Sales = SUM(Sales[TotalRevenue])
-
-Total Profit = SUM(Sales[Profit])
-
-Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
-
-Total Orders = DISTINCTCOUNT(Sales[OrderNumber])
-
-YOY Sales Growth % =
-VAR CurrentYear =
-    CALCULATE([Total Sales], YEAR(Sales[OrderDate]) = MAX(YEAR(Sales[OrderDate])))
-VAR LastYear =
-    CALCULATE([Total Sales], YEAR(Sales[OrderDate]) = MAX(YEAR(Sales[OrderDate])) - 1)
-RETURN DIVIDE(CurrentYear - LastYear, LastYear, 0)
+Total Sales = SUM('Sales Orders'[Total Revenue])
+Total Orders = DISTINCTCOUNT('Sales Orders'[OrderNumber])
+Total Quantity = SUM('Sales Orders'[Order Quantity])
+Total Cost = SUM('Sales Orders'[Total Unit Cost] * 'Sales Orders'[Order Quantity])
+Profit = [Total Sales] - [Total Cost]
+Profit Margin = DIVIDE([Profit], [Total Sales], 0)
+Average Unit Price = AVERAGE('Sales Orders'[Unit Price])
+Avg. Fulfillment Days = AVERAGE('Sales Orders'[Ship Date] - 'Sales Orders'[OrderDate])
 
 # Dark_Theme.json
 
@@ -36,3 +30,12 @@ RETURN DIVIDE(CurrentYear - LastYear, LastYear, 0)
   }
 }
 
+# Dashboard Pages
+
+Page 1: Sales Overview (KPIs + cards + main revenue chart)
+Page 2: Sales Trends (line chart, date slicer)
+Page 3: Customer Insights (top customers table, bar chart)
+Page 4: Channel & Currency Analysis (bar/pie charts)
+Page 5: Product Performance (heatmap + bar chart)
+Page 6: Warehouse & Delivery (fulfillment delays, map)
+Page 7: Regional Analysis (map + top regions bar chart)
