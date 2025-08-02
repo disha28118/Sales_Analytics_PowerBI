@@ -1,5 +1,4 @@
 # Sales Analytics Dashboard Project
-------------------------------------
 
 Files in this project:
 
