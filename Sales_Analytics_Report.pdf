@@ -1,1 +1,43 @@
-This is a placeholder for Sales_Analytics_Report.pdf
+- Project Overview
+This project involves creating an interactive Power BI dashboard to analyze the company's sales data. The dashboard provides a 360° view of sales performance, customer behavior, product trends, channel performance, and regional distribution.
+By integrating data from orders, customers, products, and regions, stakeholders can explore key business metrics and identify patterns that drive decision-making.
+The analysis helps answer critical questions:
+Which products generate the most revenue?
+Who are the most valuable customers?
+Which sales channels perform best?
+How do sales vary by region and currency?
+What is the impact of cost and pricing on profitability?
+
+- Problem Statement
+The company’s raw sales data is scattered across different files and formats, making it difficult to analyze and interpret effectively.
+Without a consolidated and interactive reporting solution, decision-makers struggle to:
+Identify sales trends and seasonality.
+Recognize high-value customers.
+Evaluate warehouse and shipping efficiency.
+Measure the impact of currency fluctuations on sales.
+Detect low-performing products that may require strategic changes.
+This lack of consolidated analysis hinders timely decision-making and affects overall sales strategy and profitability.
+
+- Objectives
+The goal of the Sales Analytics Dashboard is to:
+Sales Overview – Display total sales, total orders, profit, and average unit price.
+Trend Analysis – Track sales trends over time to detect seasonal patterns.
+Customer Insights – Identify top customers by revenue and order count.
+Channel Performance – Compare sales across online, wholesale, distributor, and export channels.
+Currency Impact – Analyze sales in different currencies and their effect on revenue.
+Warehouse Performance – Monitor order fulfillment and shipping delays.
+Product Performance – Highlight top and bottom-performing products.
+Profitability Analysis – Compare revenue, cost, and profit margins.
+Regional Sales – Visualize sales by delivery region.
+
+- Dashboard screenshots
+
+
+- Key insights from the analysis
+Sales Seasonality – Revenue peaks during certain months, suggesting strong seasonal demand.
+Top Customers Drive Revenue – A small percentage of customers contribute disproportionately to sales.
+Channel Disparity – Wholesale and online sales generate the highest revenue, while export sales have lower volume but higher average prices.
+Currency Dependence – Sales in USD and NZD dominate; currency fluctuations can impact profitability.
+Product Performance Gaps – A few products account for most sales, while several underperform and may require promotion or discontinuation.
+Regional Strengths – Certain regions consistently outperform others, indicating where marketing efforts should be concentrated.
+Warehouse Delays – Some warehouses have longer fulfillment times, affecting delivery performance.
