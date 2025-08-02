@@ -1,4 +1,4 @@
-## Sales Analytics Dashboard Project
+# Sales Analytics Dashboard Project
 ------------------------------------
 
 Files in this project:
@@ -19,5 +19,5 @@ Instructions:
 - Open 'Sales_Dashboard.pbix' in Power BI Desktop to explore the interactive dashboard.
 - Review the PDF and PPTX files for a summary of insights and visuals.
 
-Here is the working screenshot
-## https://drive.google.com/file/d/1ohzpbItj75WmvffVaVrOXWzw4Inzb6uB/view?usp=drivesdk
+# Here is the working screenshot
+# https://drive.google.com/file/d/1ohzpbItj75WmvffVaVrOXWzw4Inzb6uB/view?usp=drivesdk
