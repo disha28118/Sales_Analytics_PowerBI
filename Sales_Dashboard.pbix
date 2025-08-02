@@ -1,1 +1,38 @@
-This is a placeholder for Sales_Dashboard.pbix
+# Sales_Dashboard.pbix
+# DAX Measures
+Total Sales = SUM(Sales[TotalRevenue])
+
+Total Profit = SUM(Sales[Profit])
+
+Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
+
+Total Orders = DISTINCTCOUNT(Sales[OrderNumber])
+
+YOY Sales Growth % =
+VAR CurrentYear =
+    CALCULATE([Total Sales], YEAR(Sales[OrderDate]) = MAX(YEAR(Sales[OrderDate])))
+VAR LastYear =
+    CALCULATE([Total Sales], YEAR(Sales[OrderDate]) = MAX(YEAR(Sales[OrderDate])) - 1)
+RETURN DIVIDE(CurrentYear - LastYear, LastYear, 0)
+
+# Dark_Theme.json
+
+{
+  "name": "Custom Dark Theme",
+  "dataColors": [
+    "#4F81BD", "#C0504D", "#9BBB59", "#8064A2",
+    "#4BACC6", "#F79646", "#92A9CF", "#D99694"
+  ],
+  "background": "#1E1E1E",
+  "foreground": "#FFFFFF",
+  "tableAccent": "#4F81BD",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "color": { "solid": { "color": "#FFFFFF" } },
+        "background": { "solid": { "color": "#1E1E1E" } }
+      }
+    }
+  }
+}
+
